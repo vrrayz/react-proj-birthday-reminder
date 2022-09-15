@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #f28ab2;
 }
-h2{
+
+h2 {
   font-weight: 400;
 }
 
-.flex-container{
+.flex-container {
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -16,7 +18,7 @@ h2{
   flex-direction: column;
 }
 
-.card{
+.card {
   padding: 16px;
   background-color: #fff;
   width: 320px;
@@ -25,27 +27,48 @@ h2{
   /* max-width: 320px; */
   margin: auto;
 }
-.celebrant-list{
+
+.celebrant-list {
   display: flex;
   margin-bottom: 8px;
 }
-.celebrant-list .celebrant-photo{
+
+.celebrant-list .celebrant-photo {
   width: 75px;
   height: 75px;
   object-fit: cover;
   border-radius: 50%;
   margin-right: 8px;
 }
-.celebrant-list .celebrant-details{
+
+.celebrant-list .celebrant-details {
   margin-left: 8px;
 }
-.font-bold{
+
+.font-bold {
   font-weight: 600;
 }
-.font-light{
+
+.font-light {
   font-weight: 300;
   color: #999;
 }
+
+.btn {
+  display: block;
+  width: 100%;
+  border-color: transparent;
+  background: #f28ab2;
+  color: #fff;
+  margin: 2rem auto 0;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  padding: .5rem 0;
+  letter-spacing: .1rem;
+  border-radius: .25rem;
+  outline: 1px solid rgba(242, 138, 178, .8);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
