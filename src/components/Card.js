@@ -4,6 +4,10 @@ import { data } from '../data'
 
 const Card = () => {
     const [celebrants, setCelebrants] = useState(data)
+
+    const clearAll = () => {
+        setCelebrants([]);
+    }
   return (
     <div className='card'>
         <h2>{celebrants.length} birthdays today</h2>
@@ -14,7 +18,7 @@ const Card = () => {
                 return <Item key={celebrant.id} celebrant={celebrant}/>
             })
         }
-        <button className='btn'>Clear All</button>
+        <button className='btn' type='button' onClick={clearAll}>Clear All</button>
     </div>
   )
 }
